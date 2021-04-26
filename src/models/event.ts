@@ -13,6 +13,7 @@ export default class Event extends RestfulModel {
     readOnly?: boolean;
     location?: string;
     masterEventId?: string;
+    originalStartTime?: string;
     when?: {
         start_time?: number;
         end_time?: number;
@@ -171,6 +172,10 @@ Event.attributes = {
     masterEventId: Attributes.String({
         modelKey: 'masterEventId',
         jsonKey: 'master_event_id',
+    }),
+    originalStartTime: Attributes.String({
+        modelKey: 'originalStartTime',
+        jsonKey: 'original_start_time',
     }),
     when: Attributes.Object({
         modelKey: 'when',
