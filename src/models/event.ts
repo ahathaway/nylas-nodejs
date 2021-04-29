@@ -13,7 +13,7 @@ export default class Event extends RestfulModel {
     readOnly?: boolean;
     location?: string;
     masterEventId?: string;
-    originalStartTime?: string;
+    originalStartTime?: number;
     when?: {
         start_time?: number;
         end_time?: number;
